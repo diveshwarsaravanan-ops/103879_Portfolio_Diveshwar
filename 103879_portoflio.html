@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <title>My Portfolio</title>
+    </head>
+    <body>
+        <!-- Dark/Light Mode Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">☀️</button>
+
+        <header class="Greetings">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1 id="greeting-text"></h1>
+                    <h2 class="header_h2">Discover my work, skills, and experiences.</h2>
+
+
+                    <div class="dropdown">
+                        <button class="dropbtn" id="menu-btn">
+                            Explore Portfolio
+                            <span class="dropdown-arrow">&#9662;</span>
+                        </button>
+
+                        <div class="dropdown-content" id="dropdown-menu">
+                            <a href="#about" class="dropdown-link">
+                            <span class="dropdown-icon">👤</span>
+                            <span class="dropdown-text">About Me</span>
+                            </a>
+
+                            <a href="#projects" class="dropdown-link">
+                            <span class="dropdown-icon">💻</span>
+                            <span class="dropdown-text">Projects</span>
+                            </a>
+
+                            <a href="#education" class="dropdown-link">
+                            <span class="dropdown-icon">🎓</span>
+                            <span class="dropdown-text">Education</span>
+                            </a>
+
+                            <a href="#contact" class="dropdown-link">
+                            <span class="dropdown-icon">📩</span>
+                            <span class="dropdown-text">Contact</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <img src="1768305002832.png" alt="Profile Picture" class="profile-box">
+                </div>
+
+                
+
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <div class="about" id="about">
+            <hr class="section-divider">
+
+            <h2 class="aboutme_h2">About Me</h2>
+            <div class="about-card">
+
+                <div class="skills-section">
+                    <h3 class="skills-title">My skills</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Programming 💻</span>
+                        <span class="skill-tag">Music 🎵</span>
+                        <span class="skill-tag">Computer Repair 🛠️</span>
+                        <span class="skill-tag">Game Development 🎮</span>
+                    </div>
+                </div>
+        
+                <p>Hi! My name is Diveshwar Saravanan, and I'm an undergraduate student majoring in Network Computing at the University of Malaysia Sarawak.</p>    
+                
+                <p>I'm very passionate about learning new skills that combine creativity with technical expertise, especially stuff like web development
+                and even game development are new forays that I'm making as I have keen interest in polishing and honing my coding skills as well 
+                practicing creative problem solving and critical thinking skills. I also have had some coding experiences in the past that I still wish to
+                improve.</p>
+
+                <p>I'm currently developing the aforementioned skills while also making time for other interests I have!</p>
+            </div>
+
+            <hr class="section-divider">
+        </div>
+
+        <!-- -----------------------------Projects Section------------------------------------- -->
+        <section class="projects" id="projects">
+        <h2 class="aboutme_h2">My Projects</h2>
+
+        <div class="project-slider">
+            <button class="project-arrow" id="prev-project" aria-label="Previous project">&#10094;</button>
+
+            <div class="project-card" id="project-card">
+            <img class="project-image" id="project-image" src="" alt="Project image">
+
+            <div class="project-info">
+                <h3 id="project-title"></h3>
+                <p id="project-short"></p>
+
+                <div class="project-details" id="project-details">
+                <p id="project-full"></p>
+                <div class="project-links" id="project-links"></div>
+                </div>
+
+                <button class="project-toggle" id="project-toggle">View Details</button>
+            </div>
+            </div>
+
+            <button class="project-arrow" id="next-project" aria-label="Next project">&#10095;</button>
+        </div>
+        </section>
+
+        <!-- Image Gallery Popup -->
+        <div class="gallery-overlay" id="gallery-overlay">
+        <div class="gallery-box">
+            <button class="gallery-close" id="gallery-close">&times;</button>
+            <img id="gallery-image" src="" alt="Project gallery image">
+
+            <div class="gallery-controls">
+            <button id="gallery-prev">&#10094;</button>
+            <button id="gallery-next">&#10095;</button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="about" id="education">
+            <hr class="section-divider">
+
+            <h2 class="aboutme_h2">Education</h2>
+            
+            <div class="timeline-container">
+                <!-- Continuous vertical line on the left -->
+                <div class="timeline-line"></div>
+
+                <!-- Level 3: University -->
+                <div class="timeline-item">
+                    <div class="timeline-node"></div>
+                    <div class="about-card timeline-card">
+                        <span class="level-badge">Present</span>
+                        <h3>Universiti Malaysia Sarawak (UNIMAS)</h3>
+                        <p class="timeline-sub">Bachelor's Degree in Computer Science (Network Computing)</p>
+                        <p class="timeline-detail">Expected Graduation: 2028</p>
+                    </div>
+                </div>
+
+                <!-- Level 2: STPM -->
+                <div class="timeline-item">
+                    <div class="timeline-node"></div>
+                    <div class="about-card timeline-card">
+                        <h3>Kolej Tingkatan Enam Sri Istana</h3>
+                        <p class="timeline-sub">Sijil Tinggi Persekolahan Malaysia (STPM)</p>
+                    </div>
+                </div>
+
+                <!-- Level 1: SPM -->
+                <div class="timeline-item">
+                    <div class="timeline-node"></div>
+                    <div class="about-card timeline-card">
+                        <h3>SMK Kota Kemuning</h3>
+                        <p class="timeline-sub">Sijil Pelajaran Malaysia (SPM)</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact" id="contact">
+            <hr class="section-divider">
+
+            <h2 class="aboutme_h2">Contact Me</h2>
+            
+            <div class="contact-card">
+                <p class="contact-subtitle">Wanna connect? Feel free to reach out!</p>
+                
+                <div class="contact-grid">
+                    <!-- Left Column: Let's Connect Links with Logo Image Placeholders -->
+                    <div class="contact-info-col">
+                        <h3>Let's Connect</h3>
+                        <ul class="contact-links-list">
+                            <li>
+                                <img src="gmail.png" alt="Email Logo" class="contact-icon"> 
+                                <span>Email:</span> <a href="mailto:diveshwar.saravanan@gmail.com">diveshwar.saravanan@gmail.com</a>
+                            </li>
+                            <li>
+                                <img src="github.png" alt="GitHub Logo" class="contact-icon"> 
+                                <span>GitHub:</span> <a href="https://github.com/diveshwarsaravanan-ops" target="_blank">diveshwarsaravanan-ops</a>
+                            </li>
+                            <li>
+                                <img src="linkedin.png" alt="LinkedIn Logo" class="contact-icon"> 
+                                <span>LinkedIn:</span> <a href="https://www.linkedin.com/in/diveshwar-saravanan-b136b7277/" target="_blank">Diveshwar Saravanan</a>
+                            </li>
+                            <li>
+                                <span class="location-icon">📍</span> 
+                                <span>Location:</span> Selangor, Malaysia
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Column: Send a Message Form -->
+                    <div class="contact-form-col">
+                        <h3>Send a Message</h3>
+                        <form action="mailto:diveshwar.saravanan@gmail.com" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="Name" required placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="Email" required placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="Message" rows="4" required placeholder="Type your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="contact-submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+        </div>
+
+    <script src="portfolio.js"></script>
+    </body>
+</html>
